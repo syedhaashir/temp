@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:430px)" href="mobile.css">
+    <title>Matrix Multiplier</title>
+</head>
+<body><center>
+    <header>
+        <h1>Matrix Multiplication App</h1><hr><br>
+    </header>
+
+
+    <form onsubmit="start(); return false"; id="form1">
+    <div class="box">
+        <h3 >Enter The Number of rows and columns</h3><br>
+        <input type="number"  required min="2" placeholder="Number of Rows" id="input_1" >&nbsp; X &nbsp;
+        <input type="number"  required min="2" placeholder="Number of Columns" id="input_2">&nbsp;&nbsp;<br><br><br>
+       <button type="submit" class="btn"  id="btn1">Start</button>
+    </div>
+    
+    </form>
+
+
+    <form onsubmit="sum(); return false"; id="form2">
+
+        <div class="matBox">
+            <div id="mat_1" class="matrix"></div>
+            <h1 class="matrixs">X</h1>
+            <div id="mat_2" class="matrix"></div>
+            <h1 class="matrixs"></h1>
+            <div id="result" class="matrix"></div>
+        </div>
+        <button type="submit" class="btn">Calculate</button>
+    </form>
+</center>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
